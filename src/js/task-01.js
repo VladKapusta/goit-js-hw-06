@@ -1,14 +1,10 @@
-const items = document.querySelectorAll('#categories .item')
-console.log("Number of categories:", items.length)
+const items = document.querySelectorAll('#categories .item');
+console.log('Number of categories:', items.length);
 
-for(let item of items) {
-    console.log("Category:", item.querySelector('h2').textContent)
-    console.log("Elements:", item.querySelector('ul').children.length)
+for (let item of items) {
+  console.log('Category:', item.querySelector('h2').textContent);
+  console.log('Elements:', item.querySelector('ul').children.length);
 }
-
-
-
-
 
 // const categories = document.querySelector("#categories");
 // const quantityCategories = categories.children.length;
@@ -33,5 +29,3 @@ for(let item of items) {
 // const titelItem3 = categories.lastElementChild.querySelector("h2").textContent;
 // console.log("Category:", titelItem3);
 // console.log("Elements:", quantityItem3);
-
-
