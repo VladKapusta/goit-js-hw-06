@@ -5,9 +5,10 @@ const spanRef = bodyRef.querySelector('.color');
 buttonRef.addEventListener('click', creatingBeacgroundColor);
 
 function creatingBeacgroundColor() {
-  bodyRef.style.backgroundColor = getRandomHexColor();
+  let createdHexColor = getRandomHexColor();
 
-  spanRef.textContent = getRandomHexColor();
+  bodyRef.style.backgroundColor = createdHexColor;
+  spanRef.textContent = createdHexColor;
 }
 
 function getRandomHexColor() {
